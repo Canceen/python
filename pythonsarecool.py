@@ -1,8 +1,8 @@
 import random
 def roulette_game():
-    Money=5000
+    Money= 5000
     while True:
-        print(f'your money: {Money}')
+        print('your balance is: {Money}')
         bet = int(input('How much do you want to bet? '))
         print('')
         if bet > Money:
@@ -16,14 +16,14 @@ def roulette_game():
         spin_number = random.randint(0,36)
         print('')
         if spin_number == number:
-            print("You Won")
+            print("You Won!")
             Money += bet*36
         else:
-            print(f'You lost, the number was {spin_number}')
+            print('You lost, the number was {spin_number}')
         if Money <= 0:
             print("You ran out of coins, beat it!")
             break
         play_again = input('Do you want to play again (y/n)')
-        if play_again.lower() --"n": 
+        if play_again.lower == "n": 
             break
         print ('Thanks for playing :)')
